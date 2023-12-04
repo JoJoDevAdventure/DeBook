@@ -751,6 +751,7 @@ nav .action {
 }
 
 .why-col-1 p {
+    width: 524px;
     margin-bottom: 25px;
     color: #6F6F6F;
     font-family: 'Inter', sans-serif;
