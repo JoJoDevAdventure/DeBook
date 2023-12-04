@@ -72,6 +72,22 @@ nav .action {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+}
+
+nav .action div a {
+    text-decoration: none;
+    color: #000000;
+}
+nav .action div {
+    margin-left: 10px;
+    color: #000000;
+}
+
+nav .action i {
+    width: 18.327px;
+    height: 17.873px;
+    flex-shrink: 0;
 }
 
 .primary-button {
@@ -91,6 +107,7 @@ nav .action {
     position: relative;
     overflow: hidden;
     z-index: 10;
+    margin-left: 10px;
 }
 
 .primary-button:after {
