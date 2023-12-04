@@ -839,6 +839,7 @@ nav .action {
     line-height: normal;
     letter-spacing: -1px;
     text-align: left;
+    margin-bottom: 5px;
 }
 
 .mind p {
@@ -850,10 +851,11 @@ nav .action {
     line-height: 22px;
     /* 157.143% */
     letter-spacing: -0.42px;
+    margin-bottom: 5px;
 }
 
 .mind .socials i {
-    width: 23.327px;
+    width: 18.327px;
     height: 17.873px;
     flex-shrink: 0;
     color: #6F6F6F;
