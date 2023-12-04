@@ -952,3 +952,9 @@ footer .socials i{
     height: 17.873px;
     color: #6F6F6F;
 }
+
+.signature {
+    color: #777777;
+    text-align: center;
+    font-size: 18px;
+}
