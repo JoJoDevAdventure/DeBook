@@ -402,9 +402,10 @@ nav .action {
 
 #values .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin: auto;
+    gap: 30px;
 }
 
 .values-col-1 {
