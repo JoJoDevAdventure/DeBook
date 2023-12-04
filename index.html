@@ -17,16 +17,29 @@
             <nav>
                 <img src="Assets/logo.png" class="logo">
                 <ul>
-                    <li><a href="#header" onclick="closemenu()">Marketplace</a></li>
-                    <li><a href="/projects.html" onclick="closemenu()">Manifesto</a></li>
-                    <li><a href="#services" onclick="closemenu()">Building Live</a></li>
-                    <li><a href="#about-us" onclick="closemenu()">Podcast</a></li>
+                    <li><a href="#header" >Marketplace</a></li>
+                    <li><a href="#manifesto">Manifesto</a></li>
+                    <li><a href="#building">Building Live</a></li>
+                    <li><a href="#">Podcast</a></li>
                 </ul>
                 <div class="action">
                     <a href="#" class="primary-button">Buy Magickey</a>
-                    <div>
-                        <i class="fa-solid fa-globe"></i>
-                        <a href="#">EN</a>
+                    <div class="dropdown" onclick="toggleDropdown()">
+                        <div class="lang-display">
+                            <img class="flag" src="Assets/eng.png" alt="">
+                            <p>ENG</p>
+                            <i id="arrowIcon" class="chevron fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-content" id="languageDropdown">
+                            <div class="lang">
+                                <img src="Assets/eng.png" alt="">
+                                <p>ENG</p>
+                            </div>
+                            <div class="lang">
+                                <img src="Assets/spa.png" alt="">
+                                <p>SPA</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -34,7 +47,7 @@
             <div id="arrow-container">
                 <a href="#about" id="arrow"></a>
             </div>
-            
+
             <div class="header-text">
                 <h1>Your magic key to the<br>future of books</h1>
                 <p>Building is fun. Doing it with a community is even better.
@@ -333,7 +346,32 @@
         </footer>
         <p class="signature">Joseph on 03/12/2023</p>
     </div>
+
+    <script>
+        // Function to toggle the visibility of the dropdown content
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("languageDropdown");
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+
+            var arrowIcon = document.getElementById("arrowIcon");
+            arrowIcon.classList.toggle("fa-chevron-down");
+            arrowIcon.classList.toggle("fa-chevron-up");
+        }
+
+        // Function to handle language selection
+        function selectLanguage(language) {
+            // Add your logic to handle the selected language (e.g., update a language variable, redirect, etc.)
+            console.log("Selected language: " + language);
+
+            // Close the dropdown after selecting a language
+            var dropdownContent = document.getElementById("languageDropdown");
+            dropdownContent.style.display = "none";
+        }
+
+    </script>
+    <script>history.scrollRestoration = "manual"</script>
 </body>
+
 
 
 </html>

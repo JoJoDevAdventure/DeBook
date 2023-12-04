@@ -80,14 +80,35 @@ nav .action div a {
     color: #000000;
 }
 nav .action div {
-    margin-left: 10px;
+    margin-left: 15px;
     color: #000000;
+    display: flex;
 }
 
 nav .action i {
     width: 18.327px;
     height: 17.873px;
     flex-shrink: 0;
+}
+
+nav .action .dropdown .chevron{
+    width: 15px;
+    height: 17px;
+    margin-left: 1px;
+    color: #000000;
+}
+
+.flag {
+    width: 20px;
+    height: 12px;
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.lang-display {
+align-items: center;
 }
 
 .primary-button {
@@ -134,11 +155,61 @@ nav .action i {
     border: 2px solid var(--Red, #F44);
 }
 
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Adjust the background color as needed */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transform: translateY(30px) translateX(-7px);
+    width: 80px;
+  }
+  
+  .dropdown-content .lang {
+    padding: 12px;
+    margin: 0;
+    padding-right: 20px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .dropdown-content .lang p{
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+  .dropdown-content .lang img{
+    width: 20px;
+    height: 12px;
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .dropdown-content .lang:hover {
+    background-color:rgba(236, 5, 5, 0.206);
+  }
+
+  .dropdown .dropdown-content {
+    display: none;
+  }
+
 /* Optional: Add a smooth transition to the box shadow property for a subtle effect */
 .primary-button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .header-text {
     margin-top: 20%;
